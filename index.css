@@ -9,11 +9,27 @@ body{
 }
 
 .navbar{
-    height: 3rem;
+    height: 4rem;
+    background-color: #4ca1af;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 4rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    
+}
+
+.navbar .logo{
+    height: 100%;
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.navbar .logo img{
+    height: 80%;
     width: 100%;
-    background: white;
-    
-    
 }
 
 .navbar ul{
@@ -27,15 +43,26 @@ body{
 .navbar li{
     padding:0  1rem;
     font-weight: bolder;
+    height:75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navbar li:hover{
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 10px 10px; 
 }
 
 .slidebar{
     justify-content: space-evenly;
     display: inline-flex;
-    height: 30rem;
+    height: 35rem;
     width: 100%;
     align-items: center;
-    background-image: linear-gradient(skyblue 20%,white 80%);
+    background-image: linear-gradient(#4ca1af,#6dd5ed);
 }
 
  .slidebar .leftside{
@@ -50,11 +77,14 @@ body{
 .slidebar .leftside .imgshow{
     height: 85%;
     width: 100%;
+    border: solid 5px whitesmoke;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .slidebar .leftside .imgshow img{
     height: 100%;
     width: 100%;
+    border-radius: 10px 10px 10px 10px;
     
 }
 
@@ -81,6 +111,11 @@ body{
     margin: 0 0.5rem;
     /* border-style: solid; */
     /* border-color:  black; */  
+    
+}
+
+.slidebar .leftside .imgslider .active{
+    background-color: red;
 }
 
 .slidebar .rightside{
@@ -90,17 +125,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .slidebar .rightside .card{
     height: 80%;
-    /* width: 100%; */
     text-align: center;
     color:rgb(32, 32, 32);
     border-radius: 2%;
     padding: 0 2rem;
     overflow: hidden;
     justify-content: space-between;
+    margin-top: 5rem;
 }
 
 .slidebar .rightside .card h1{
@@ -109,8 +145,8 @@ body{
 }
 
 .details{
-    background-image: linear-gradient(white,rgb(231, 230, 230),white);
-    height: 35rem;
+    background-image: linear-gradient(#6dd5ed,white);
+    height: 40rem;
     width: 100%;
     display: inline-flex;
     align-items: center;
@@ -158,6 +194,27 @@ body{
     
 }
 .footer{
-    background-color: grey;
-    height: 5rem;
+    background-color: #4ca1af;
+    height: 4rem;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin: 1rem 4rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    
+}
+.footer .info{
+    margin: 0 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+}
+.footer .social-icon{
+    height: 60%;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
 }
